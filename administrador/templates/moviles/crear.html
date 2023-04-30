@@ -1,0 +1,155 @@
+{% extends '../index_master.html' %}
+
+{% block content %}
+
+    <!-- page content -->
+        <div class="right_col" role="main">
+         
+          <h1> crear</h1>
+          <form>
+            <div class="form-group row">
+              <label for="Proveedor" class="col-4 col-form-label">Proveedor</label> 
+              <div class="col-8">
+                <input id="Proveedor" name="Proveedor" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="Chofer" class="col-4 col-form-label">Nombre de Chofer</label> 
+              <div class="col-8">
+                <input id="Chofer" name="Chofer" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="rutchofer" class="col-4 col-form-label">Rut de Chofer</label> 
+              <div class="col-8">
+                <input id="rutchofer" name="rutchofer" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="telefono" class="col-4 col-form-label">Telefono de Chofer</label> 
+              <div class="col-8">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                  </div> 
+                  <input id="telefono" name="telefono" type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="licencia" class="col-4 col-form-label">Tipo de Licencia</label> 
+              <div class="col-8">
+                <select id="licencia" name="licencia" required="required" class="custom-select">
+                  <option value="A1">A1</option>
+                  <option value="A2">A2</option>
+                  <option value="A3">A3</option>
+                  <option value="A4">A4</option>
+                  <option value="B">B</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="operador" class="col-4 col-form-label">Nombre del Peoneta</label> 
+              <div class="col-8">
+                <input id="operador" name="operador" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="rutop" class="col-4 col-form-label">Rut de Peoneta</label> 
+              <div class="col-8">
+                <input id="rutop" name="rutop" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="telefonoop" class="col-4 col-form-label">Telefono de Peoneta</label> 
+              <div class="col-8">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                  </div> 
+                  <input id="telefonoop" name="telefonoop" type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="Camion" class="col-4 col-form-label">Tipo de Camion</label> 
+              <div class="col-8">
+                <select id="Camion" name="Camion" class="custom-select">
+                  <option value="1700-2500">Camion Pequeño</option>
+                  <option value="3500-5000">Camion Mediano</option>
+                  <option value="6000-1000">Camion Grande</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="patente" class="col-4 col-form-label">Patente</label> 
+              <div class="col-8">
+                <input id="patente" name="patente" type="text" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-4">Permiso de Circulacion</label> 
+              <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="Permiso" id="Permiso_0" type="radio" class="custom-control-input" value="Al Dia"> 
+                  <label for="Permiso_0" class="custom-control-label">Al Dia</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="Permiso" id="Permiso_1" type="radio" class="custom-control-input" value="duck"> 
+                  <label for="Permiso_1" class="custom-control-label">Atrasado</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-4">Revision Tecnica</label> 
+              <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="tecnica" id="tecnica_0" type="radio" class="custom-control-input" value="Al Dia "> 
+                  <label for="tecnica_0" class="custom-control-label">Al Dia</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="tecnica" id="tecnica_1" type="radio" class="custom-control-input" value="Vencida"> 
+                  <label for="tecnica_1" class="custom-control-label">Vencida</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-4">Gases</label> 
+              <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="gases" id="gases_0" type="radio" class="custom-control-input" value="Al Dia"> 
+                  <label for="gases_0" class="custom-control-label">Al Dia</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="gases" id="gases_1" type="radio" class="custom-control-input" value="Vencida"> 
+                  <label for="gases_1" class="custom-control-label">Vencida</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-4">SOAP</label> 
+              <div class="col-8">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="seguro" id="seguro_0" type="radio" class="custom-control-input" value="Al Dia "> 
+                  <label for="seguro_0" class="custom-control-label">Al dia</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="seguro" id="seguro_1" type="radio" class="custom-control-input" value="Vencida"> 
+                  <label for="seguro_1" class="custom-control-label">Vencida</label>
+                </div>
+              </div>
+            </div> 
+            <div class="form-group row">
+              <div class="offset-4 col-8">
+                <button name="submit" type="submit" class="btn btn-primary">Guardar</button>
+              </div>
+            </div>
+          </form>
+        <!-- /page content -->
+{% endblock %}
+
+
